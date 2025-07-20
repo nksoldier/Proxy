@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>API Documentation</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      margin: 0;
+      padding: 40px 20px;
+      color: #333;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.05);
+    }
+
+    h1, h2 {
+      color: #007BFF;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th, td {
+      padding: 12px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+
+    th {
+      background: #f0f8ff;
+    }
+
+    code {
+      background: #f1f1f1;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 90%;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 14px;
+      color: #777;
+    }
+
+    @media(max-width: 600px) {
+      body {
+        padding: 20px 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>API Documentation</h1>
+    <p>Welcome to the Proxy API documentation. Here you can find information about available endpoints and how to use them.</p>
+
+    <h2>📡 Base URL</h2>
+    <p><code>https://pooriyaesmaeelzade.ir/api/proxy/</code></p>
+
+    <h2>📋 Endpoints</h2>
+    <table>
+      <tr>
+        <th>Endpoint</th>
+        <th>Method</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td><code>/</code></td>
+        <td>GET</td>
+        <td>Get list of available Telegram proxies in JSON format</td>
+      </tr>
+    </table>
+
+    <h2>🔍 Example Response</h2>
+    <pre>
+{
+  "proxies": [
+    {
+      "name": "1",
+      "host": "tg://proxy?server=193.243.147.231&port=20&secret=...",
+      "ping": 29.43
+    },
+    ...
+  ]
+}
+    </pre>
+
+    <div class="footer">© 2025 YourAPI Docs — All rights reserved.</div>
+  </div>
+</body>
+</html>
